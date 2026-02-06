@@ -1,0 +1,51 @@
+{
+  "name": "swapenv-code",
+  "displayName": "swapenv",
+  "description": "Manage swapenv environments directly from IDE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "swapenv.showMenu", "title": "swapenv: Show Menu" },
+      { "command": "swapenv.switchEnv", "title": "swapenv: Switch Environment" },
+      { "command": "swapenv.load", "title": "swapenv: Load" },
+      { "command": "swapenv.spit", "title": "swapenv: Spit" },
+      { "command": "swapenv.refresh", "title": "swapenv: Refresh" },
+      { "command": "swapenv.showVersions", "title": "swapenv: Show Versions" }
+    ],
+    "keybindings": [
+      {
+        "command": "swapenv.showMenu",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s"
+      }
+    ],
+    "configuration": {
+      "title": "swapenv",
+      "properties": {
+        "swapenv.autoRefresh": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-refresh on file saves"
+        },
+        "swapenv.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show success/error messages"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0"
+  }
+}
