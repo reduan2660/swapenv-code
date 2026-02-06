@@ -3,6 +3,10 @@
   "displayName": "swapenv",
   "description": "Manage swapenv environments directly from IDE",
   "publisher": "AlveReduan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reduan2660/swapenv-code"
+  },
   "version": "0.0.1",
   "icon": "icon.png",
   "engines": {
