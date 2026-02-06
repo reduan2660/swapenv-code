@@ -2,6 +2,7 @@
   "name": "swapenv-code",
   "displayName": "swapenv",
   "description": "Manage swapenv environments directly from IDE",
+  "publisher": "AlveReduan",
   "version": "0.0.1",
   "icon": "icon.png",
   "engines": {
