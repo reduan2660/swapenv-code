@@ -3,6 +3,7 @@
   "displayName": "swapenv",
   "description": "Manage swapenv environments directly from IDE",
   "version": "0.0.1",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.109.0"
   },
